@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    position: relative;
+    background-color: white;
+}
+
+/* nav{
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    
+} */
+nav .wrapper{
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+
+nav .nav-container{
+    width: 100%;
+    height: 100%;
+    margin:  0 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav .nav-container img{
+    width: 60px;
+}
+
+nav .nav-container .links a{
+    font-size: 1.3rem;
+    color: rgb(8, 7, 7);
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.2s linear;
+}
+
+nav .nav-container .links a:hover{
+    color: rgb(124, 123, 123);
+    
+}
+nav .nav-container .search:hover{
+    scale: 1.05;
+}
+nav .nav-container .search {
+    width: 250px;
+    box-shadow: 1px 1px 20px rgb(63, 154, 95);
+    height: 5vh;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid white;
+    
+}
+nav .nav-container .search input{
+    width: 86%;
+    padding-left: 15px;
+    font-size: 1    rem;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;   
+}
+nav .nav-container .search i{
+    color: rgb(70, 196, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    width: 14%;
+    cursor: pointer;
+    height: 100%;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+/* landing page */
+
+.landingpage{
+    background-image: url(images/back2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingpage .content{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landingpage .content .heading{
+    margin-top: -100px;
+    max-width:460px ;
+    width: 100%;
+}
+
+.landingpage .content .heading h3{
+    color: rgb(225, 66, 31);
+    font-size: 1.6rem;
+}   
+.landingpage .content .heading h1{
+    color: rgb(42, 116, 130);
+    line-height: -2rem;
+    font-size: 4.5rem;
+}
+
+.landingpage .content .heading p{
+    color: rgb(34, 98, 103);
+    font-size: 1.2rem;
+}
+.landingpage .content .heading button{
+    width: 220px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    background: rgb(76, 183, 222);
+    color: rgb(12, 11, 11);
+    border-radius: 20px;
+    font-family: 'Patua One', serif;
+    transition: 0.5s linear;
+}
+
+.landingpage .content .heading button:hover{
+    scale: 1.05;
+}
+
+.landingpage .content .image img{
+    width: 400px;
+    transform: rotate(40deg);
+}
+
+
+
+/* about us */
+.aboutus{
+    box-shadow: -5px -5px 100px rgb(0, 0, 0) ;
+    /* background: rgb(96, 112, 234); */
+    background-image: url(images/back1.jpg);
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus .container{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.aboutus .container .aboutus-content{
+    color: rgb(171, 93, 54);
+    width: 30%;
+}
+.aboutus .container  img{
+    filter: drop-shadow(0 0 10px rgb(103, 237, 143));
+    border-radius: 100px;
+    width: 100%;
+}
+.aboutus .container .aboutus-content h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Patua One', serif;
+    color: rgb(133, 61, 35);
+    letter-spacing: 1px;
+    font-size: 4rem;
+    filter: drop-shadow(0 0 15px rgb(174, 80, 80));
+}
+
+.aboutus .container .aboutus-content p{
+    font-size: 1.rem;
+    text-align: center;
+}
+
+
+
+/* Food Details */
+
+.details-foods{
+    background-color: black;
+    background-image: url(images/back5.png);
+    background-size:100%;
+}
+
+.details-foods .title{
+    width: 100%;
+    margin: 1px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.details-foods .title h1{
+    font-size: 3rem;
+    color: rgb(23, 198, 87);
+    text-align: center;
+    width: 40%;
+}
+
+.details-foods .foods{
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.details-foods .foods .card{
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(54, 208, 110);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-foods .foods:hover .card{
+    scale: 1.1;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.details-foods .foods:hover .card:not(:hover){
+    opacity: 0.2;
+    backdrop-filter: blur(10px);
+    scale: 1;
+}
+.details-foods .foods .card img{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.details-foods .foods .card .discription{
+    color:rgb(23, 198, 87);
+    margin:0 10px;
+}
+.details-foods .foods .card .discription h1{
+    
+    font-family: 'Patua One', serif;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.details-foods .foods .card .discription p{
+    float: left;
+    margin-left: 2px;
+}
+.details-foods .foods .card .discription .price{
+    float: right;
+    font-family: 'Lemon', serif;
+    margin:10px 20px 10px 0;
+}
+
+
+/* download section */
+
+.download{
+    /* background-color: black; */
+    background-image: url(images/back5.png);
+    background-size:100%;
+}
+
+.download .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.download .container .image img{
+    width: 200px;
+    pointer-events: none;
+    margin-left: 40px;
+}
+
+.download .container .content{
+    color: rgb(23, 198, 87);
+    width: 40%;
+}
+.download .container .content h1{
+    font-size: 7rem;
+}
+.download .container .content p{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.download .container .content .icons{
+    width: 70%;
+    display: flex;
+    margin: 40px 20px;
+    justify-content: space-around;
+}
+.download .container .content .icons img{
+    width: 40%;
+    cursor: pointer;
+}
+
+
+/* Default styles for larger screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-container, .container, .foods {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Wrapper for sections like about us, landing page, etc. */
+.wrapper, .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+    /* Stack navigation links vertically on tablets */
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search input {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .landingpage .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutus .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Card layout for foods section */
+    .foods {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 50px) {
+    /* Make the navigation links vertical and centered */
+    .links {
+        flex-direction: column;
+        align-items: center;
+        nav-up: auto;
+        
+    }
+
+    /* Adjust font sizes for smaller screens */
+    h1, h2, h3 {
+        font-size: 0.1rem;
+    }
+
+    .search input {
+        width: 40%;
+        padding: 4px;
+    }
+
+    .aboutus .container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* Card styling on mobile */
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Download section */
+    .download .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* App store icons */
+    .icons img {
+        width: 10px;
+        margin: 1px;
+    }
+}
+img {
+    max-width: 300px;
+    height: auto;
+}
